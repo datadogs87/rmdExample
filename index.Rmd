@@ -6,6 +6,17 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
+
+library(DBI)
+
+# con <- DBI::dbConnect(odbc::odbc(),
+#                      Driver   = "SQL Server",
+#                      Server   = "fsuecondb.database.windows.net",
+#                      Database = "fsuEcon",
+#                      UID      = rstudioapi::askForPassword("Database user"),
+#                      PWD      = rstudioapi::askForPassword("Database password"),
+#                      Port     = 1433)
+
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
